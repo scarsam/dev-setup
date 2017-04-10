@@ -128,7 +128,6 @@ Apps
 * [Fetch](https://fetchsoftworks.com/): Fetch is a reliable, full-featured file transfer client for the Apple Macintosh whose user interface emphasizes simplicity and ease of use.
 
 * [Spectacle](https://www.spectacleapp.com/): Move and resize windows with ease. Window control with simple and customizable keyboard shortcuts.
-  - ###### Spectacle shortcuts
   - Fullscreen: `control + ⌥ Option + ⌘ Cmd + ↑` 
   - Right Half: `⌥ Option + ⌘ Cmd + →` 
   - Left Half: `⌥ Option + ⌘ Cmd + ←`
