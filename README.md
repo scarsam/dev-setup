@@ -205,13 +205,13 @@ Install Node.js with Homebrew:
 $ brew update
 $ brew install node
 ```
-The formula also installs the npm package manager. However, as suggested by the Homebrew output, we need to add /usr/local/share/npm/bin to our path so that npm-installed modules with executables will have them picked up.
+The formula also installs the npm package manager. However, as suggested by the Homebrew output, we need to add `/usr/local/share/npm/bin` to our path so that npm-installed modules with executables will have them picked up.
 
-To do so, add this line to your ~/.path file, before the export PATH line:
+To do so, add this line to your `~/.path` file, before the export `PATH` line:
 ```
 PATH=/usr/local/share/npm/bin:$PATH
 ```
-Open a new terminal for the $PATH changes to take effect.
+Open a new terminal for the `$PATH` changes to take effect.
 We also need to tell npm where to find the Xcode Command Line Tools, by running:
 ```
 $ sudo xcode-select -switch /usr/bin
@@ -251,8 +251,8 @@ $ npm uninstall <package>
 -
 Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.
 ###### Atom packages and settings
-[Atom Sync](https://atom.io/packages/atom-sync)
-[JSHint](https://atom.io/packages/atom-jshint)
+- [Atom Sync](https://atom.io/packages/atom-sync)
+- [JSHint](https://atom.io/packages/atom-jshint)
 1. [x] Install Shell Commands
 2. [x] Scroll Past End
 3. [x] Show Indent Line
@@ -329,3 +329,5 @@ Apps
 
 * [Sketch](https://www.sketchapp.com/): Sketch gives you the power, flexibility and speed you always wanted in a lightweight and easy-to-use package. Finally you can focus on what you do best: Design.
 
+#### Credit to: 
+[nicolashery](https://github.com/nicolashery/mac-dev-setup) for comming up with original list and documentation.
