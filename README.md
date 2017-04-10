@@ -66,9 +66,19 @@ Atom is a text editor that's modern, approachable, yet hackable to the core—a 
 -
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
-Git alias
--
-Add this to your `.gitconfig` file. 
+To install, simply run:
+
+```
+$ brew install git
+```
+When done, to test that it installed fine you can run:
+
+```
+$ git --version
+```
+And $ which git should output /usr/local/bin/git.
+
+Let's set up some basic configuration. Add this to your `.gitconfig` file. 
 1. `cd ~`
 2. `open .gitconfig`
 ```
@@ -80,6 +90,22 @@ Add this to your `.gitconfig` file.
   unstage = reset HEAD --
   last = log -1 HEAD
 ```
+
+Next, we'll define your Git user (should be the same name and email you use for GitHub and Heroku):
+
+```
+$ git config --global user.name "Your Name Here"
+$ git config --global user.email "your_email@youremail.com"
+```
+They will get added to your .gitconfig file.
+
+To push code to your GitHub repositories, we're going to use the recommended HTTPS method (versus SSH). So you don't have to type your username and password everytime, let's enable Git password caching as described here:
+
+```
+$ git config --global credential.helper osxkeychain
+```
+Note: On a Mac, it is important to remember to add .DS_Store (a hidden OS X system file that's put in folders) to your .gitignore files. You can take a look at this repository's [.gitignore](https://github.com/nicolashery/mac-dev-setup/blob/master/.gitignore) file for inspiration.
+
 [Dropbox](https://www.dropbox.com/downloading)
 -
 Bring your photos, docs, and videos anywhere and keep your files safe.
