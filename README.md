@@ -253,6 +253,11 @@ Atom is a text editor that's modern, approachable, yet hackable to the core—a 
 ###### Atom packages and settings
 - [Atom Sync](https://atom.io/packages/atom-sync)
 - [JSHint](https://atom.io/packages/atom-jshint)
+- [Synced Sidebar](https://atom.io/packages/synced-sidebar)
+- [Pigments](https://atom.io/packages/pigments)
+- [File Icons](https://atom.io/packages/file-icons)
+- [Solarized Dark](https://atom.io/themes/solarized-dark-syntax)
+- [Solarized Light](https://atom.io/themes/solarized-light-syntax)
 1. [x] Install Shell Commands
 2. [x] Scroll Past End
 3. [x] Show Indent Line
