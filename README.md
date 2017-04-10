@@ -17,6 +17,21 @@ A guide to setting up a development environment on and all useful software.
 - [Figma](https://www.figma.com/)
 - [Sketch](https://www.sketchapp.com/)
 
+System update
+-
+First thing you need to do, on any OS actually, is update the system! For that: **Apple Icon > Software Update...**
+
+System preferences
+-
+If this is a new computer, there are a couple tweaks I like to make to the System Preferences. Feel free to follow these, or to ignore them, depending on your personal preferences.
+
+In **Apple Icon > System Preferences:**
+
+* Trackpad > Tap to click
+* Keyboard > Key Repeat > Fast (all the way to the right)
+* Keyboard > Delay Until Repeat > Short (all the way to the right)
+* Dock > Automatically hide and show the Dock
+
 [Homebrew](https://brew.sh/)
 -
 Package managers make it so much easier to install and update applications (for Operating Systems) or libraries (for programming languages). The most popular one for OS X is Homebrew.
