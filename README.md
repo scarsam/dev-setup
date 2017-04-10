@@ -50,7 +50,22 @@ Once installed, your terminal shell will become the talk of the town or your mon
 
 [Node.js](https://nodejs.org/en/)
 -
-Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+Install Node.js with Homebrew:
+```
+$ brew update
+$ brew install node
+```
+The formula also installs the npm package manager. However, as suggested by the Homebrew output, we need to add /usr/local/share/npm/bin to our path so that npm-installed modules with executables will have them picked up.
+
+To do so, add this line to your ~/.path file, before the export PATH line:
+```
+PATH=/usr/local/share/npm/bin:$PATH
+```
+Open a new terminal for the $PATH changes to take effect.
+We also need to tell npm where to find the Xcode Command Line Tools, by running:
+```
+$ sudo xcode-select -switch /usr/bin
+```
 
 [Atom](https://atom.io/)
 -
@@ -106,17 +121,13 @@ $ git config --global credential.helper osxkeychain
 ```
 Note: On a Mac, it is important to remember to add .DS_Store (a hidden OS X system file that's put in folders) to your .gitignore files. You can take a look at this repository's [.gitignore](https://github.com/nicolashery/mac-dev-setup/blob/master/.gitignore) file for inspiration.
 
-[Dropbox](https://www.dropbox.com/downloading)
+Apps
 -
-Bring your photos, docs, and videos anywhere and keep your files safe.
+* [Dropbox](https://www.dropbox.com/downloading): Bring your photos, docs, and videos anywhere and keep your files safe.
 
-[Fetch](https://fetchsoftworks.com/)
--
-Fetch is a reliable, full-featured file transfer client for the Apple Macintosh whose user interface emphasizes simplicity and ease of use.
+* [Fetch](https://fetchsoftworks.com/): Fetch is a reliable, full-featured file transfer client for the Apple Macintosh whose user interface emphasizes simplicity and ease of use.
 
-[Spectacle](https://www.spectacleapp.com/)
--
-Move and resize windows with ease. Window control with simple and customizable keyboard shortcuts.
+* [Spectacle](https://www.spectacleapp.com/): Move and resize windows with ease. Window control with simple and customizable keyboard shortcuts.
 ###### Spectacle shortcuts
 1. Fullscreen: `control + ⌥ Option + ⌘ Cmd + ↑` 
 2. Right Half: `⌥ Option + ⌘ Cmd + →` 
@@ -124,23 +135,13 @@ Move and resize windows with ease. Window control with simple and customizable k
 4. Next Display: `control + ⌥ Option + ⌘ Cmd + →`
 5. Previous Display: `control + ⌥ Option + ⌘ Cmd + ←`
 
-[Flux](https://justgetflux.com/)
--
-f.lux makes your computer screen look like the room you're in, all the time. When the sun sets, it makes your computer look like your indoor lights. In the morning, it makes things look like sunlight again.
+* [Flux](https://justgetflux.com/): f.lux makes your computer screen look like the room you're in, all the time. When the sun sets, it makes your computer look like your indoor lights. In the morning, it makes things look like sunlight again.
 
-[1Password](https://1password.com/)
--
-All your other passwords and important information are protected behind your Master Password, which only you know.
+* [1Password](https://1password.com/): All your other passwords and important information are protected behind your Master Password, which only you know.
 
-[Slack](https://slack.com/)
--
-Whatever work means for you, Slack brings all the pieces and people you need together so you can actually get things done.
+* [Slack](https://slack.com/): Whatever work means for you, Slack brings all the pieces and people you need together so you can actually get things done.
 
-[Figma](https://www.figma.com/)
--
-Figma is the first interface design tool based in the browser, making it easier for teams to create software.
+* [Figma](https://www.figma.com/): Figma is the first interface design tool based in the browser, making it easier for teams to create software.
 
-[Sketch](https://www.sketchapp.com/)
--
-Sketch gives you the power, flexibility and speed you always wanted in a lightweight and easy-to-use package. Finally you can focus on what you do best: Design.
+* [Sketch](https://www.sketchapp.com/): Sketch gives you the power, flexibility and speed you always wanted in a lightweight and easy-to-use package. Finally you can focus on what you do best: Design.
 
