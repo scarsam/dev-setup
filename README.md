@@ -128,12 +128,12 @@ Apps
 * [Fetch](https://fetchsoftworks.com/): Fetch is a reliable, full-featured file transfer client for the Apple Macintosh whose user interface emphasizes simplicity and ease of use.
 
 * [Spectacle](https://www.spectacleapp.com/): Move and resize windows with ease. Window control with simple and customizable keyboard shortcuts.
-###### Spectacle shortcuts
-1. Fullscreen: `control + ⌥ Option + ⌘ Cmd + ↑` 
-2. Right Half: `⌥ Option + ⌘ Cmd + →` 
-3. Left Half: `⌥ Option + ⌘ Cmd + ←`
-4. Next Display: `control + ⌥ Option + ⌘ Cmd + →`
-5. Previous Display: `control + ⌥ Option + ⌘ Cmd + ←`
+  - ###### Spectacle shortcuts
+  - Fullscreen: `control + ⌥ Option + ⌘ Cmd + ↑` 
+  - Right Half: `⌥ Option + ⌘ Cmd + →` 
+  - Left Half: `⌥ Option + ⌘ Cmd + ←`
+  - Next Display: `control + ⌥ Option + ⌘ Cmd + →`
+  - Previous Display: `control + ⌥ Option + ⌘ Cmd + ←`
 
 * [Flux](https://justgetflux.com/): f.lux makes your computer screen look like the room you're in, all the time. When the sun sets, it makes your computer look like your indoor lights. In the morning, it makes things look like sunlight again.
 
