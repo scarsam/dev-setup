@@ -87,7 +87,7 @@ Move and resize windows with ease. Window control with simple and customizable k
 -
 f.lux makes your computer screen look like the room you're in, all the time. When the sun sets, it makes your computer look like your indoor lights. In the morning, it makes things look like sunlight again.
 
-[1password](https://1password.com/)
+[1Password](https://1password.com/)
 -
 All your other passwords and important information are protected behind your Master Password, which only you know.
 
