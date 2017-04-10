@@ -1,8 +1,8 @@
 # dev-setup
 A guide to setting up a development environment on and all useful software.
+- [iTerm](https://www.iterm2.com/)
 - [Homebew](https://brew.sh/)
 - [Cask](https://caskroom.github.io/)
-- [iTerm](https://www.iterm2.com/)
 - [Oh my zsh](http://ohmyz.sh/)
 - [Node.js](https://nodejs.org/en/)
 - [Atom](https://atom.io/)
@@ -32,21 +32,91 @@ In **Apple Icon > System Preferences:**
 * Keyboard > Delay Until Repeat > Short (all the way to the right)
 * Dock > Automatically hide and show the Dock
 
+
+[iTerm](https://www.iterm2.com/)
+-
+Since we're going to be spending a lot of time in the command-line, let's install a better terminal than the default one.
+
+Let's just quickly change some preferences. In **iTerm > Preferences...**, under the tab **General**, uncheck **Confirm closing multiple sessions** and **Confirm "Quit iTerm2 (Cmd+Q)" command** under the section **Closing**.
+
+In the tab **Profiles**, create a new one with the "+" icon, and rename it to your first name for example. Then, select **Other Actions... > Set as Default**. Finally, under the section **Window**, change the size to something better, like **Columns: 125** and **Rows: 35**.
+
+When done, hit the red "X" in the upper left (saving is automatic in OS X preference panes). Close the window and open a new one to see the size change.
+
 [Homebrew](https://brew.sh/)
 -
 Package managers make it so much easier to install and update applications (for Operating Systems) or libraries (for programming languages). The most popular one for OS X is Homebrew.
 
+### Install
+An important dependency before Homebrew can work is the **Command Line Tools** for **Xcode**. These include compilers that will allow you to build things from source.
+
+Now, Xcode weights something like 2GB, and you don't need it unless you're developing iPhone or Mac apps. Good news is Apple provides a way to install only the Command Line Tools, without Xcode. To do this you need to go to http://developer.apple.com/downloads, and sign in with your Apple ID (the same one you use for iTunes and app purchases). Unfortunately, you're greeted by a rather annoying questionnaire. All questions are required, so feel free to answer at random.
+
+Once you reach the downloads page, search for "command line tools", and download the latest **Command Line Tools (OS X Mountain Lion) for Xcode**. Open the **.dmg** file once it's done downloading, and double-click on the **.mpkg** installer to launch the installation. When it's done, you can unmount the disk in Finder.
+
+**Note:** If you are running **OS X 10.9 Mavericks**, then you can install the Xcode Command Line Tools directly from the command line with `$ xcode-select --install`, and you don't have to go through the download page and the questionnaire.
+
+Finally, we can install Hombrew! In the terminal paste the following line (without the `$`), hit **Enter**, and follow the steps on the screen:
+```
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+One thing we need to do is tell the system to use programs installed by Hombrew (`in /usr/local/bin`) rather than the OS default if it exists. We do this by adding `/usr/local/bin` to your `$PATH` environment variable:
+```
+$ echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+```
+Open a new terminal tab with **Cmd+T** (you should also close the old one), then run the following command to make sure everything works:
+```
+$ brew doctor
+```
+### Usage
+
+To install a package (or **Formula** in Homebrew vocabulary) simply type:
+```
+$ brew install <formula>
+```
+To update Homebrew's directory of formulae, run:
+```
+$ brew update
+```
+Note: I've seen that command fail sometimes because of a bug. If that ever happens, run the following (when you have Git installed):
+```
+$ cd /usr/local
+$ git fetch origin
+$ git reset --hard origin/master
+```
+To see if any of your packages need to be updated:
+```
+$ brew outdated
+```
+To update a package:
+```
+$ brew upgrade <formula>
+```
+Homebrew keeps older versions of packages installed, in case you want to roll back. That rarely is necessary, so you can do some cleanup to get rid of those old versions:
+```
+$ brew cleanup
+```
+To see what you have installed (with their version numbers):
+```
+$ brew list --versions
+```
+
 [Cask](https://caskroom.github.io/)
 -
 Homebrew-Cask extends Homebrew and brings its elegance, simplicity, and speed to the installation and management of GUI macOS applications such as Google Chrome and Adium.
-
-[iTerm](https://www.iterm2.com/)
--
-iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with macOS 10.8 or newer. iTerm2 brings the terminal into the modern age with features you never knew you always wanted.
+To install Cask formula simply type:
+```
+$ brew tap caskroom/cask
+```
 
 [Oh my zsh](http://ohmyz.sh/)
 -
 Once installed, your terminal shell will become the talk of the town or your money back! With each keystroke in your command prompt, you'll take advantage of the hundreds of powerful plugins and beautiful themes. Strangers will come up to you in cafés and ask you, "that is amazing! are you some sort of genius?"
+
+Install Oh my zsh with cURL:
+```
+$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
 [Node.js](https://nodejs.org/en/)
 -
