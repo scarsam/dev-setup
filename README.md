@@ -3,6 +3,7 @@ A guide to setting up a development environment on and all useful software.
 - [iTerm](https://www.iterm2.com/)
 - [Homebew](https://brew.sh/)
 - [Cask](https://caskroom.github.io/)
+- [Consolas](http://ikato.com/blog/how-to-install-consolas-font-on-mac-os-x.html)
 - [Oh my zsh](http://ohmyz.sh/)
 - [Ruby and RVM](https://get.rvm.io)
 - [Node.js](https://nodejs.org/en/)
@@ -109,6 +110,25 @@ To install Cask formula simply type:
 ```
 $ brew tap caskroom/cask
 ```
+
+[Consolas](http://ikato.com/blog/how-to-install-consolas-font-on-mac-os-x.html)
+-
+I really like the Consolas font for coding. Being a Microsoft (!) font, it is not installed by default. Since we're going to be looking at a lot of terminal output and code, let's install it now.
+
+There are two ways we can install it. If you bought Microsoft Office for Mac, install that and Consolas will be installed as well.
+
+If you don't have Office, follow these steps:
+```
+$ brew install cabextract
+$ cd ~/Downloads
+$ mkdir consolas
+$ cd consolas
+$ curl -O http://download.microsoft.com/download/f/5/a/f5a3df76-d856-4a61-a6bd-722f52a5be26/PowerPointViewer.exe
+$ cabextract PowerPointViewer.exe
+$ cabextract ppviewer.cab
+$ open CONSOLA*.TTF
+```
+And click Install Font. Thanks to Alexander Zhuravlev for his [post](http://ikato.com/blog/how-to-install-consolas-font-on-mac-os-x.html).
 
 [Oh my zsh](http://ohmyz.sh/)
 -
