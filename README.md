@@ -4,6 +4,7 @@ A guide to setting up a development environment on and all useful software.
 - [Homebew](https://brew.sh/)
 - [Cask](https://caskroom.github.io/)
 - [Oh my zsh](http://ohmyz.sh/)
+- [Ruby and RVM](https://get.rvm.io)
 - [Node.js](https://nodejs.org/en/)
 - [Atom](https://atom.io/)
 - [Git](https://git-scm.com/)
@@ -118,6 +119,85 @@ Install Oh my zsh with cURL:
 $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+[Ruby and RVM](https://get.rvm.io)
+-
+Like Python, Ruby is already installed on Unix systems. But we don't want to mess around with that installation. More importantly, we want to be able to use the latest version of Ruby.
+
+### Install
+
+When installing Ruby, best practice is to use RVM (Ruby Version Manager) which allows you to manage multiple versions of Ruby on the same machine. Installing RVM, as well as the latest version of Ruby, is very easy. Just run:
+```
+$ curl -L https://get.rvm.io | bash -s stable --ruby
+```
+When it is done, both RVM and a fresh version of Ruby 2.0 are installed. The following line was also automatically added to your .bash_profile:
+```
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+```
+I prefer to move that line to the .extra file, keeping my .bash_profile clean. I suggest you do the same.
+
+After that, start a new terminal and run:
+```
+$ type rvm | head -1
+```
+You should get the output `rvm is a function`.
+
+### Usage
+
+The following command will show you which versions of Ruby you have installed:
+```
+$ rvm list
+```
+The one that was just installed, Ruby 2.0, should be set as default. When managing multiple versions, you switch between them with:
+```
+$ rvm use system # Switch back to system install (1.8)
+$ rvm use 2.0.0 --default # Switch to 2.0.0 and sets it as default
+```
+Run the following to make sure the version you want is being used (in our case, the just-installed Ruby 1.9.3):
+```
+$ which ruby
+$ ruby --version
+```
+You can install another version with:
+```
+$ rvm install 1.9.3
+```
+To update RVM itself, use:
+```
+$ rvm get stable
+```
+RubyGems, the Ruby package manager, was also installed:
+```
+$ which gem
+```
+Update to its latest version with:
+```
+$ gem update --system
+```
+To install a "gem" (Ruby package), run:
+```
+$ gem install <gemname>
+```
+To install without generating the documentation for each gem (faster):
+```
+$ gem install <gemname> --no-document
+```
+To see what gems you have installed:
+```
+$ gem list
+```
+To check if any installed gems are outdated:
+```
+$ gem outdated
+```
+To update all gems or a particular gem:
+```
+$ gem update [<gemname>]
+```
+RubyGems keeps old versions of gems, so feel free to do come cleaning after updating:
+```
+$ gem cleanup
+```
+
 [Node.js](https://nodejs.org/en/)
 -
 Install Node.js with Homebrew:
@@ -137,11 +217,42 @@ We also need to tell npm where to find the Xcode Command Line Tools, by running:
 $ sudo xcode-select -switch /usr/bin
 ```
 
+### Npm usage
+Node modules are installed locally in the node_modules folder of each project by default if you don't install them globally.
+
+To install a package:
+```
+$ npm install <package> # Install locally
+$ npm install -g <package> # Install globally
+```
+To install a package and save it in your project's package.json file:
+```
+$ npm install <package> --save
+```
+To see what's installed:
+```
+$ npm list # Local
+$ npm list -g # Global
+```
+To find outdated packages (locally or globally):
+```
+$ npm outdated [-g]
+```
+To upgrade all or a particular package:
+```
+$ npm update [<package>]
+```
+To uninstall a package:
+```
+$ npm uninstall <package>
+```
+
 [Atom](https://atom.io/)
 -
 Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.
 ###### Atom packages and settings
 [Atom Sync](https://atom.io/packages/atom-sync)
+[JSHint](https://atom.io/packages/atom-jshint)
 1. [x] Install Shell Commands
 2. [x] Scroll Past End
 3. [x] Show Indent Line
