@@ -9,7 +9,6 @@ A guide to setting up a development environment on and all useful software.
 - [Node.js](https://nodejs.org/en/)
 - [Atom](https://atom.io/)
 - [Git](https://git-scm.com/)
-- Git alias
 - [Dropbox](https://www.dropbox.com/downloading)
 - [Fetch](https://fetchsoftworks.com/)
 - [Spectacle](https://www.spectacleapp.com/)
