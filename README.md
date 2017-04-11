@@ -281,13 +281,12 @@ Follow additional instructions on the [JSHint](http://jshint.com/docs/) website.
 -
 Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.
 ###### Atom packages and settings
-- [Atom Sync](https://atom.io/packages/atom-sync)
+- [Atom Sync Settings](https://atom.io/themes/sync-settings)
 - [JSHint](https://atom.io/packages/atom-jshint)
 - [Synced Sidebar](https://atom.io/packages/synced-sidebar)
 - [Pigments](https://atom.io/packages/pigments)
 - [File Icons](https://atom.io/packages/file-icons)
-- [Solarized Dark](https://atom.io/themes/solarized-dark-syntax)
-- [Solarized Light](https://atom.io/themes/solarized-light-syntax)
+- [One Dark UI](https://atom.io/themes/one-dark-ui)
 1. [x] Install Shell Commands
 2. [x] Scroll Past End
 3. [x] Show Indent Line
