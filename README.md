@@ -1,6 +1,6 @@
 # dev-setup
 A guide to setting up a development environment on and all useful software.
-- [iTerm](https://www.iterm2.com/)
+- [iTerm](https://github.com/scarsam/dev-setup/blob/master/README.md#iterm)
 - [Homebew](https://brew.sh/)
 - [Cask](https://caskroom.github.io/)
 - [Consolas](http://ikato.com/blog/how-to-install-consolas-font-on-mac-os-x.html)
