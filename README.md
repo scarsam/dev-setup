@@ -13,7 +13,7 @@ A guide to setting up a development environment on and all useful software.
 - [Fetch](https://fetchsoftworks.com/)
 - [Spectacle](https://www.spectacleapp.com/)
 - [Flux](https://justgetflux.com/)
-- [1password](https://1password.com/)
+- [1Password](https://1password.com/)
 - [Slack](https://slack.com/)
 - [Screenhero](https://screenhero.com)
 - [Figma](https://www.figma.com/)
@@ -359,7 +359,7 @@ Apps
 
 * [Slack](https://slack.com/): Whatever work means for you, Slack brings all the pieces and people you need together so you can actually get things done.
 
-* [Screenher](https://screenhero.com): Screen sharing for collaboration in teams
+* [Screenhero](https://screenhero.com): Screen sharing for collaboration in teams
 
 * [Figma](https://www.figma.com/): Figma is the first interface design tool based in the browser, making it easier for teams to create software.
 
