@@ -229,6 +229,11 @@ command -v nvm
 ```
 which should output 'nvm' if the installation was successful. Please note that which nvm will not work, since nvm is a sourced shell function, not an executable binary.
 
+### Install Node.js
+```
+nvm install node
+```
+
 ### Npm usage
 Node modules are installed locally in the node_modules folder of each project by default if you don't install them globally.
 
