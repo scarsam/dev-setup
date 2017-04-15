@@ -6,7 +6,7 @@ A guide to setting up a development environment on and all useful software.
 - [Consolas](http://ikato.com/blog/how-to-install-consolas-font-on-mac-os-x.html)
 - [Oh my zsh](https://github.com/scarsam/dev-setup/blob/master/README.md#homebrew)
 - [Ruby and RVM](https://github.com/scarsam/dev-setup/blob/master/README.md#homebrew)
-- [Node.js](https://github.com/scarsam/dev-setup/blob/master/README.md#homebrew)
+- [NVM](https://github.com/scarsam/dev-setup/blob/master/README.md#homebrew)
 - [Atom](https://github.com/scarsam/dev-setup/blob/master/README.md#homebrew)
 - [Git](https://github.com/scarsam/dev-setup/blob/master/README.md#homebrew)
 - [Dropbox](https://github.com/scarsam/dev-setup/blob/master/README.md#apps)
@@ -210,24 +210,24 @@ RubyGems keeps old versions of gems, so feel free to do come cleaning after upda
 $ gem cleanup
 ```
 
-[Node.js](https://nodejs.org/en/)
+[Node Version Manager](https://github.com/creationix/nvm)
 -
-Install Node.js with Homebrew:
+Install NVM:
 ```
-$ brew update
-$ brew install node
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
 ```
-The formula also installs the npm package manager. However, as suggested by the Homebrew output, we need to add `/usr/local/share/npm/bin` to our path so that npm-installed modules with executables will have them picked up.
+Note: On OS X, if you get nvm: command not found after running the install script, your system may not have a [.bash_profile file] where the command is set up. Simply create one with touch `~/.bash_profile` and run the install script again.
 
-To do so, add this line to your `~/.path` file, before the export `PATH` line:
+If the above doesn't fix the problem, open your `.bash_profile` and add the following line of code:
 ```
-PATH=/usr/local/share/npm/bin:$PATH
+source ~/.bashrc
 ```
-Open a new terminal for the `$PATH` changes to take effect.
-We also need to tell npm where to find the Xcode Command Line Tools, by running:
+### Verify installation
+To verify that nvm has been installed, do:
 ```
-$ sudo xcode-select -switch /usr/bin
+command -v nvm
 ```
+which should output 'nvm' if the installation was successful. Please note that which nvm will not work, since nvm is a sourced shell function, not an executable binary.
 
 ### Npm usage
 Node modules are installed locally in the node_modules folder of each project by default if you don't install them globally.
