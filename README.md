@@ -58,14 +58,6 @@ Once you reach the downloads page, search for "command line tools", and download
 
 **Note:** If you are running **OS X 10.9 Mavericks**, then you can install the Xcode Command Line Tools directly from the command line with `$ xcode-select --install`, and you don't have to go through the download page and the questionnaire.
 
-Finally, we can install Hombrew! In the terminal paste the following line (without the `$`), hit **Enter**, and follow the steps on the screen:
-```
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-One thing we need to do is tell the system to use programs installed by Hombrew (`in /usr/local/bin`) rather than the OS default if it exists. We do this by adding `/usr/local/bin` to your `$PATH` environment variable:
-```
-$ echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
-```
 Open a new terminal tab with **Cmd+T** (you should also close the old one), then run the following command to make sure everything works:
 ```
 $ brew doctor
