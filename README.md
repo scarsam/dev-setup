@@ -3,7 +3,7 @@ A guide to setting up a development environment on and all useful software.
 - [iTerm](https://github.com/scarsam/dev-setup/blob/master/README.md#iterm)
 - [Homebew](https://github.com/scarsam/dev-setup/blob/master/README.md#homebrew)
 - [Cask](https://github.com/scarsam/dev-setup/blob/master/README.md#cask)
-- [Consolas](http://ikato.com/blog/how-to-install-consolas-font-on-mac-os-x.html)
+- [Consolas](https://github.com/scarsam/dev-setup/blob/master/README.md#consolas)
 - [Oh my zsh](https://github.com/scarsam/dev-setup/blob/master/README.md#oh-my-zsh)
 - [Ruby and RVM](https://github.com/scarsam/dev-setup/blob/master/README.md#ruby-and-rvm)
 - [NVM](https://github.com/scarsam/dev-setup/blob/master/README.md#node-version-manager)
