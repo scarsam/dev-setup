@@ -7,7 +7,7 @@ A guide to setting up a development environment on and all useful software.
 - [Oh my zsh](https://github.com/scarsam/dev-setup/blob/master/README.md#oh-my-zsh)
 - [Ruby and RVM](https://github.com/scarsam/dev-setup/blob/master/README.md#ruby-and-rvm)
 - [NVM](https://github.com/scarsam/dev-setup/blob/master/README.md#node-version-manager)
-- [Atom](https://github.com/scarsam/dev-setup/blob/master/README.md#atom)
+- [Visual Studio Code](https://github.com/scarsam/dev-setup/blob/master/README.md#visual-studio-code)
 - [Git](https://github.com/scarsam/dev-setup/blob/master/README.md#git)
 - [Dropbox](https://github.com/scarsam/dev-setup/blob/master/README.md#apps)
 - [Fetch](https://github.com/scarsam/dev-setup/blob/master/README.md#apps)
@@ -15,7 +15,6 @@ A guide to setting up a development environment on and all useful software.
 - [Flux](https://github.com/scarsam/dev-setup/blob/master/README.md#apps)
 - [1Password](https://github.com/scarsam/dev-setup/blob/master/README.md#apps)
 - [Slack](https://github.com/scarsam/dev-setup/blob/master/README.md#apps)
-- [Screenhero](https://github.com/scarsam/dev-setup/blob/master/README.md#apps)
 - [Figma](https://github.com/scarsam/dev-setup/blob/master/README.md#apps)
 - [Sketch](https://github.com/scarsam/dev-setup/blob/master/README.md#apps)
 
@@ -264,30 +263,32 @@ To uninstall a package:
 $ npm uninstall <package>
 ```
 
-### JSHint
-
-JSHint is a JavaScript developer's best friend.
-
-Install JSHint via npm (global install preferred)
-```
-$ npm install -g jshint
-```
-Follow additional instructions on the [JSHint](http://jshint.com/docs/) website.
-
-[Atom](https://atom.io/)
+[Visual Studio Code](https://code.visualstudio.com/)
 -
-Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.
-###### Atom packages and settings
-- [Atom Sync Settings](https://atom.io/themes/sync-settings)
-- [JSHint](https://atom.io/packages/atom-jshint)
-- [Synced Sidebar](https://atom.io/packages/synced-sidebar)
-- [Pigments](https://atom.io/packages/pigments)
-- [File Icons](https://atom.io/packages/file-icons)
-- [One Dark UI](https://atom.io/themes/one-dark-ui)
-1. [x] Install Shell Commands
-2. [x] Scroll Past End
-3. [x] Show Indent Line
-4. [x] Show Invisible
+Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications
+###### Visual Studio Code packages and settings
+```
+{
+  "editor.fontFamily": "Consolas, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "vscode-icons",
+}
+```
+###### Visual Studio Extensions
+- Auto Close Tag 
+- Auto Rename Tag
+- Debugger for Chrome
+- Endwise
+- ESLint
+- HTML CSS Support
+- One Dark Pro (Theme)
+- Open in Browser
+- Path Intellisense
+- Ruby
+- Ruby-rubocop
+- VSCode-icons
 
 [Git](https://git-scm.com/)
 -
