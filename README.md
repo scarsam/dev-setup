@@ -123,7 +123,9 @@ And click Install Font. Thanks to Alexander Zhuravlev for his [post](http://ikat
 
 [Oh my zsh](http://ohmyz.sh/)
 -
-Once installed, your terminal shell will become the talk of the town or your money back! With each keystroke in your command prompt, you'll take advantage of the hundreds of powerful plugins and beautiful themes. Strangers will come up to you in cafés and ask you, "that is amazing! are you some sort of genius?"
+Once installed, your terminal shell will become the talk of the town or your money back! With each keystroke in your command prompt, you'll take advantage of the hundreds of powerful plugins and beautiful themes. Strangers will come up to you in cafés and ask you, "that is amazing! are you some sort of genius?" Follow this guide to get it setup: https://www.freecodecamp.org/news/jazz-up-your-zsh-terminal-in-seven-steps-a-visual-guide-e81a8fd59a38/
+
+Plugin=(git zsh-syntax-highlighting zsh-completions zsh-autosuggestions github)
 
 Install Oh my zsh with cURL:
 ```
@@ -269,11 +271,21 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 ###### Visual Studio Code packages and settings
 ```
 {
-  "editor.fontFamily": "Consolas, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 13,
-  "editor.tabSize": 2,
-  "workbench.colorTheme": "One Dark Pro",
-  "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "vscode-icons",
+    "files.autoSave": "onFocusChange",
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "Monokai",
+    "search.location": "panel",
+    "editor.formatOnSave": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "window.zoomLevel": 0,
+    "colorize.languages": [
+        "javascript"
+    ]
 }
 ```
 ###### Visual Studio Extensions
@@ -317,6 +329,7 @@ Let's set up some basic configuration. Add this to your `.gitconfig` file.
   br = branch
   unstage = reset HEAD --
   last = log -1 HEAD
+	pushf = push --force-with-lease
 ```
 
 Next, we'll define your Git user (should be the same name and email you use for GitHub and Heroku):
