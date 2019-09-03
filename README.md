@@ -289,18 +289,27 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 }
 ```
 ###### Visual Studio Extensions
+- Alphabetical Sorter
 - Auto Close Tag 
 - Auto Rename Tag
+- Colorize
 - Debugger for Chrome
 - Endwise
 - ESLint
 - HTML CSS Support
-- One Dark Pro (Theme)
+- Gitlens
+- GraphQL for VSCode
+- Prettier
+- Rails run specs
+- Rainbow CSV
+- Sublime Material Theme
 - Open in Browser
 - Path Intellisense
 - Ruby
+- Ruby Haml
 - Ruby-rubocop
 - VSCode-icons
+- vscode-styled-components
 
 [Git](https://git-scm.com/)
 -
@@ -364,13 +373,9 @@ Apps
   - Next Display: `control + ⌥ Option + ⌘ Cmd + →`
   - Previous Display: `control + ⌥ Option + ⌘ Cmd + ←`
 
-* [Flux](https://justgetflux.com/): f.lux makes your computer screen look like the room you're in, all the time. When the sun sets, it makes your computer look like your indoor lights. In the morning, it makes things look like sunlight again.
-
 * [1Password](https://1password.com/): All your other passwords and important information are protected behind your Master Password, which only you know.
 
 * [Slack](https://slack.com/): Whatever work means for you, Slack brings all the pieces and people you need together so you can actually get things done.
-
-* [Screenhero](https://screenhero.com): Screen sharing for collaboration in teams
 
 * [Figma](https://www.figma.com/): Figma is the first interface design tool based in the browser, making it easier for teams to create software.
 
